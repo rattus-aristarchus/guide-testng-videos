@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.1.dtd" >
+
+<suite name="Tests">
+    <test name="tests" >
+        <classes>
+            <class name="org.allure.testng_videos.VideoTest" />
+            <class name="org.allure.testng_videos.WithAfterMethodTest" />
+        </classes>
+    </test>
+</suite>

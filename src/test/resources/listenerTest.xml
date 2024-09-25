@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.1.dtd" >
+
+<suite name="Test with listener">
+    <!--listeners>
+        <listener class-name="org.allure.testng_videos.TestListener"></listener>
+    </listeners-->
+    <test name="test with listener" >
+        <classes>
+            <class name="org.allure.testng_videos.WithListenerTest" />
+        </classes>
+    </test>
+</suite>
