@@ -28,10 +28,14 @@ public class WithAfterMethodTest {
     }
 
     @AfterMethod
-    public void status(ITestResult result){
+    public void attachVideoOnFailure(ITestResult result){
         if (result.getStatus() == ITestResult.FAILURE) {
             Util.attachVideo(driver);
         }
+    }
+
+    @AfterMethod
+    public void teardownDriver() {
         driver.quit();
     }
 
