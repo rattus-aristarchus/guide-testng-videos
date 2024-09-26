@@ -27,6 +27,7 @@ public class WithListenerTest {
     public void openWikipediaPage() {
         staticDriver.get("https://en.wikipedia.org/wiki/Software_testing");
 
+        // intentional failure
         Assert.assertFalse(staticDriver.getTitle().contains("Software testing"));
     }
 

@@ -24,6 +24,7 @@ public class WithAfterMethodTest {
     public void openWikipediaPage() {
         driver.get("https://en.wikipedia.org/wiki/Software_testing");
 
+        // intentional failure
         Assert.assertFalse(driver.getTitle().contains("Software testing"));
     }
 
